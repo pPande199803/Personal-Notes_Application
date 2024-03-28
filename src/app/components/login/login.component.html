@@ -1,0 +1,33 @@
+<nav>
+    <div class="nav-data">
+        <div class="nav-title">
+            <a href="">Notes Application</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="loginForm">
+        <form [formGroup]="loginForm">
+            <h1>Login Form</h1>
+            <hr>
+            <div class="email">
+                <label>E-Mail Id</label>
+                <input type="text" class="form-control" placeholder="Enter Email Id Here.."
+                formControlName="emailId">
+            </div>
+            <div class="password">
+                <label>Password</label>
+                <input type="number" class="form-control" placeholder="Enter password Here.."
+                formControlName="password">
+            </div>
+            <div class="register-link">
+                <a routerLink="/register">Create New Account..?</a>
+            </div>
+            <hr>
+            <div class="d-grid mx-auto">
+                <button class="btn btn-success" (click)="loginUserData()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

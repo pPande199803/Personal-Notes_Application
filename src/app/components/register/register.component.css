@@ -1,0 +1,60 @@
+
+nav{
+    background-color: black;
+    padding: 10px;
+}
+.login{
+    align-items: center;
+    margin-top: 12px;
+}
+.nav-title a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 5px;
+}
+.nav-data{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-fluid{
+    overflow-y: hidden;
+}
+.loginForm{
+    border: 1px solid gray;
+    width: 40%;
+    padding: 20px;
+    margin: 5% auto;
+}
+.loginForm h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-control{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.register-link {
+    text-align: end;
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width:750px) {
+    .container-fluid{
+        overflow-y: hidden;
+    }
+    .loginForm{
+        margin: 10% 0%;
+        width: 100%;
+    }
+}

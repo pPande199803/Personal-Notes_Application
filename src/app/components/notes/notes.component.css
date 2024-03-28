@@ -1,0 +1,102 @@
+.main{
+    background-color: rgba(0, 0, 0, 0.144);
+    width: 100%;
+    height: 100vh;
+}
+.button{
+    padding: 1%;
+}
+.card-part{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    background-color: black;
+    padding: 10px;
+}
+.login{
+    align-items: center;
+    margin-top: 12px;
+}
+.nav-title a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 5px;
+}
+.nav-data{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.add-notes{
+    display: flex;
+    position: sticky;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+.allNotes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.allNotes .card{
+    width: 24%;
+    height: 12rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card-header{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+.card-button{
+    margin-left: auto;
+}
+.fa-eye{
+    margin-left: auto;
+    margin-right: 10px;
+    color: rgb(255, 208, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-pencil{
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(25, 0, 255);
+}
+.fa-trash{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+}
+.card-body p{
+    text-align: justify;
+}
+
+
+@media screen and (max-width:750px) {
+    .allNotes{
+        display: flex;
+        justify-content: space-around;
+        gap: 2px;
+    }
+    .allNotes .card{
+        width: 45%;
+        margin-top: 2px;
+    }
+    .card-header .time{
+        font-size: 14px;
+    }
+    .card-button{
+        margin-left: auto;
+    }
+}
